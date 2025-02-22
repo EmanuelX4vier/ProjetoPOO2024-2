@@ -1,0 +1,120 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"b1180f24-a16a-4b0c-9a76-6008a89408f9\" name=\"Changes\" comment=\"esqueleto com varios erros, dificuldade com a gravacao de dados.\">\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/GerenciaFinanceira/Exceptions/UsuarioJaCadastradoException.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/GerenciaFinanceira/Exceptions/UsuarioNaoCadastradoException.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/GerenciaFinanceira/Interface_E_Sistema/Usuario.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/test/java/TestesComMovimentacao/Entradas_Saidas_Test.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/test/java/TestesComUsuario/UsuarioTest.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/test/java/TestesCom_O_Sistema/SistemaTest.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/MovimentacoesFinanceiras.dat\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/GerenciaFinanceira/Interface_E_Sistema/GravadorDeDados.java\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/GerenciaFinanceira/Interface_E_Sistema/InterfaceDoSistema.java\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/GerenciaFinanceira/Interface_E_Sistema/SistemaDoGerenciadorFinanceiro.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/GerenciaFinanceira/Interface_E_Sistema/SistemaDoGerenciadorFinanceiro.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/GerenciaFinanceira/Movimentacao/Entrada.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/GerenciaFinanceira/Movimentacao/Entrada.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/GerenciaFinanceira/Movimentacao/MovimentoBase.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/GerenciaFinanceira/Movimentacao/MovimentoBase.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/GerenciaFinanceira/Movimentacao/Saida.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/GerenciaFinanceira/Movimentacao/Saida.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/GerenciaFinanceira/ProgramaGerenciadorFinanceiro.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/GerenciaFinanceira/ProgramaGerenciadorFinanceiro.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/TestesComMovimentacao/MovimentacaoTest.java\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/TestesComOSistema/SistemaTest.java\" beforeDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Interface\" />\r\n        <option value=\"Enum\" />\r\n        <option value=\"Exception\" />\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;EmanuelX4vier&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;https://github.com/EmanuelX4vier/ProjetoPOO2024-2.git&quot;,\r\n    &quot;accountId&quot;: &quot;cc26231b-b62b-4f71-87c9-49e9016c82f5&quot;\r\n  }\r\n}</component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 8\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2tMazp6fNygft50IKvkBe6yzmCu\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"Application.ProgramaGerenciadorFinanceiro.executor\": \"Run\",\r\n    \"JUnit.Entradas_Saidas_Test.testaEntrada_E_Saida.executor\": \"Run\",\r\n    \"JUnit.MovimentacaoTest.executor\": \"Run\",\r\n    \"JUnit.SistemaTest.executor\": \"Run\",\r\n    \"JUnit.SistemaTest.testaSistema.executor\": \"Run\",\r\n    \"JUnit.SistemaTest.testaSistema2.executor\": \"Run\",\r\n    \"JUnit.SistemaTest.testeDeSistema.executor\": \"Debug\",\r\n    \"JUnit.UsuarioTest.testaCadastroDoUsuario.executor\": \"Run\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"RunOnceActivity.git.unshallow\": \"true\",\r\n    \"SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\r\n    \"git-widget-placeholder\": \"main\",\r\n    \"kotlin-language-version-configured\": \"true\",\r\n    \"project.structure.last.edited\": \"Modules\",\r\n    \"project.structure.proportion\": \"0.0\",\r\n    \"project.structure.side.proportion\": \"0.0\",\r\n    \"settings.editor.selected.configurable\": \"editor.stickyLines\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveClassesOrPackagesDialog.RECENTS_KEY\">\r\n      <recent name=\"\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"Application.ProgramaGerenciadorFinanceiro\">\r\n    <configuration name=\"ProgramaGerenciadorFinanceiro\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"GerenciaFinanceira.ProgramaGerenciadorFinanceiro\" />\r\n      <module name=\"ProjetoPOO2024-2\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"GerenciaFinanceira.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"Entradas_Saidas_Test.testaEntrada_E_Saida\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"ProjetoPOO2024-2\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"TestesComMovimentacao.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"TestesComMovimentacao\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"TestesComMovimentacao.Entradas_Saidas_Test\" />\r\n      <option name=\"METHOD_NAME\" value=\"testaEntrada_E_Saida\" />\r\n      <option name=\"TEST_OBJECT\" value=\"method\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"SistemaTest.testaSistema\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"ProjetoPOO2024-2\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"TestesComOSistema.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"TestesComOSistema\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"TestesComOSistema.SistemaTest\" />\r\n      <option name=\"METHOD_NAME\" value=\"testaSistema\" />\r\n      <option name=\"TEST_OBJECT\" value=\"method\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"SistemaTest.testeDeSistema\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"ProjetoPOO2024-2\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"TestesCom_O_Sistema.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"TestesCom_O_Sistema\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"TestesCom_O_Sistema.SistemaTest\" />\r\n      <option name=\"METHOD_NAME\" value=\"testeDeSistema\" />\r\n      <option name=\"TEST_OBJECT\" value=\"method\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"UsuarioTest.testaCadastroDoUsuario\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"ProjetoPOO2024-2\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"TestesComUsuario.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"TestesComUsuario\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"TestesComUsuario.UsuarioTest\" />\r\n      <option name=\"METHOD_NAME\" value=\"testaCadastroDoUsuario\" />\r\n      <option name=\"TEST_OBJECT\" value=\"method\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Application.ProgramaGerenciadorFinanceiro\" />\r\n        <item itemvalue=\"JUnit.SistemaTest.testeDeSistema\" />\r\n        <item itemvalue=\"JUnit.Entradas_Saidas_Test.testaEntrada_E_Saida\" />\r\n        <item itemvalue=\"JUnit.UsuarioTest.testaCadastroDoUsuario\" />\r\n        <item itemvalue=\"JUnit.SistemaTest.testaSistema\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"b1180f24-a16a-4b0c-9a76-6008a89408f9\" name=\"Changes\" comment=\"\" />\r\n      <created>1740164662968</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1740164662968</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"esqueleto com varios erros, dificuldade com a gravacao de dados.\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1740189721795</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1740189721795</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"2\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"esqueleto com varios erros, dificuldade com a gravacao de dados.\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"esqueleto com varios erros, dificuldade com a gravacao de dados.\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 4de14ee7bfa64e0ccbaff9470404a49fc8db4ccd)
++++ b/.idea/workspace.xml	(date 1740247870839)
+@@ -4,25 +4,7 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="b1180f24-a16a-4b0c-9a76-6008a89408f9" name="Changes" comment="esqueleto com varios erros, dificuldade com a gravacao de dados.">
+-      <change afterPath="$PROJECT_DIR$/src/main/java/GerenciaFinanceira/Exceptions/UsuarioJaCadastradoException.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/GerenciaFinanceira/Exceptions/UsuarioNaoCadastradoException.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/GerenciaFinanceira/Interface_E_Sistema/Usuario.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/java/TestesComMovimentacao/Entradas_Saidas_Test.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/java/TestesComUsuario/UsuarioTest.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/java/TestesCom_O_Sistema/SistemaTest.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/MovimentacoesFinanceiras.dat" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/GerenciaFinanceira/Interface_E_Sistema/GravadorDeDados.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/GerenciaFinanceira/Interface_E_Sistema/InterfaceDoSistema.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/GerenciaFinanceira/Interface_E_Sistema/SistemaDoGerenciadorFinanceiro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GerenciaFinanceira/Interface_E_Sistema/SistemaDoGerenciadorFinanceiro.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/GerenciaFinanceira/Movimentacao/Entrada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GerenciaFinanceira/Movimentacao/Entrada.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/GerenciaFinanceira/Movimentacao/MovimentoBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GerenciaFinanceira/Movimentacao/MovimentoBase.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/GerenciaFinanceira/Movimentacao/Saida.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GerenciaFinanceira/Movimentacao/Saida.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/GerenciaFinanceira/ProgramaGerenciadorFinanceiro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GerenciaFinanceira/ProgramaGerenciadorFinanceiro.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/TestesComMovimentacao/MovimentacaoTest.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/TestesComOSistema/SistemaTest.java" beforeDir="false" />
+-    </list>
++    <list default="true" id="b1180f24-a16a-4b0c-9a76-6008a89408f9" name="Changes" comment="exclusão da interface, e gravador de dados, adição de um novo sistema de usuarios, melhorias nos métodos, testes positivos." />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -40,6 +22,7 @@
+   </component>
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++    <option name="UPDATE_TYPE" value="REBASE" />
+   </component>
+   <component name="GitHubPullRequestSearchHistory">{
+   &quot;lastFilter&quot;: {
+@@ -61,27 +44,27 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "Application.ProgramaGerenciadorFinanceiro.executor": "Run",
+-    "JUnit.Entradas_Saidas_Test.testaEntrada_E_Saida.executor": "Run",
+-    "JUnit.MovimentacaoTest.executor": "Run",
+-    "JUnit.SistemaTest.executor": "Run",
+-    "JUnit.SistemaTest.testaSistema.executor": "Run",
+-    "JUnit.SistemaTest.testaSistema2.executor": "Run",
+-    "JUnit.SistemaTest.testeDeSistema.executor": "Debug",
+-    "JUnit.UsuarioTest.testaCadastroDoUsuario.executor": "Run",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "RunOnceActivity.git.unshallow": "true",
+-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+-    "git-widget-placeholder": "main",
+-    "kotlin-language-version-configured": "true",
+-    "project.structure.last.edited": "Modules",
+-    "project.structure.proportion": "0.0",
+-    "project.structure.side.proportion": "0.0",
+-    "settings.editor.selected.configurable": "editor.stickyLines"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;Application.ProgramaGerenciadorFinanceiro.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.Entradas_Saidas_Test.testaEntrada_E_Saida.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.MovimentacaoTest.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.SistemaTest.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.SistemaTest.testaSistema.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.SistemaTest.testaSistema2.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.SistemaTest.testeDeSistema.executor&quot;: &quot;Debug&quot;,
++    &quot;JUnit.UsuarioTest.testaCadastroDoUsuario.executor&quot;: &quot;Run&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
++    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
++    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
++    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
++    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
++    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
++    &quot;settings.editor.selected.configurable&quot;: &quot;editor.stickyLines&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="RecentsManager">
+     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+       <recent name="" />
+@@ -192,7 +175,15 @@
+       <option name="project" value="LOCAL" />
+       <updated>1740189721795</updated>
+     </task>
+-    <option name="localTasksCounter" value="2" />
++    <task id="LOCAL-00002" summary="exclusão da interface, e gravador de dados, adição de um novo sistema de usuarios, melhorias nos métodos, testes positivos.">
++      <option name="closed" value="true" />
++      <created>1740247667758</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL-00002" />
++      <option name="project" value="LOCAL" />
++      <updated>1740247667758</updated>
++    </task>
++    <option name="localTasksCounter" value="3" />
+     <servers />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
+@@ -208,6 +199,7 @@
+   </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="esqueleto com varios erros, dificuldade com a gravacao de dados." />
+-    <option name="LAST_COMMIT_MESSAGE" value="esqueleto com varios erros, dificuldade com a gravacao de dados." />
++    <MESSAGE value="exclusão da interface, e gravador de dados, adição de um novo sistema de usuarios, melhorias nos métodos, testes positivos." />
++    <option name="LAST_COMMIT_MESSAGE" value="exclusão da interface, e gravador de dados, adição de um novo sistema de usuarios, melhorias nos métodos, testes positivos." />
+   </component>
+ </project>
+\ No newline at end of file
