@@ -6,16 +6,20 @@ import GerenciaFinanceira.Movimentacao.Entrada;
 import GerenciaFinanceira.Movimentacao.Saida;
 import GerenciaFinanceira.Movimentacao.TipoDeMovimentacao;
 
+import java.io.IOException;
+import java.io.Serializable;
 import java.util.*;
 
 
-public class SistemaDoGerenciadorFinanceiro {
+public class SistemaDoGerenciadorFinanceiro implements Serializable {
 
     private Map<Integer, Usuario> usuarios;
+    private GravadorDeDados gravador;
 
     //inicia o sistema
     public SistemaDoGerenciadorFinanceiro(){
         this.usuarios = new HashMap<>();
+        this.gravador = new GravadorDeDados();
     }
 
     //Cria codigo aleatório para o usuário.
@@ -29,17 +33,17 @@ public class SistemaDoGerenciadorFinanceiro {
     }
 
     //Registra saidas e entradas de valores.
-    public void registrarEntrada (int codigoDoUsuario, TipoDeMovimentacao tipo, double valor, String descricao, Data data, int codigoDeMovimentacao) throws UsuarioNaoCadastradoException {
-        if(this.usuarios.containsValue(codigoDoUsuario)){
+    public void registrarEntrada (int codigoDoUsuario, TipoDeMovimentacao tipo, double valor, String descricao, Data data) throws UsuarioNaoCadastradoException {
+        if(this.usuarios.containsKey(codigoDoUsuario)){
             Entrada novaEntrada = new Entrada(tipo, valor, descricao, data, random.nextInt());
-            for(Usuario u: this.usuarios.values()){
-               u.getEntradas().add(novaEntrada);
-            }
+            List<Entrada> entradas = new ArrayList<>( this.usuarios.get(codigoDoUsuario).getEntradas());
+            entradas.add(novaEntrada);
         }else{
             throw new UsuarioNaoCadastradoException ("Código de usuário incorreto ou não existe");
         }
     }
-     public void registrarSaida(int codigoDoUsuario, TipoDeMovimentacao tipo, double valor, String descricao, Data data, int codigoDeMovimentacao) throws UsuarioNaoCadastradoException{
+
+     public void registrarSaida(int codigoDoUsuario, TipoDeMovimentacao tipo, double valor, String descricao, Data data) throws UsuarioNaoCadastradoException{
         if(this.usuarios.containsValue(codigoDoUsuario)){
             Saida novaSaida = new Saida(tipo, valor, descricao, data, random.nextInt());
             for(Usuario u: this.usuarios.values()){
@@ -83,5 +87,17 @@ public class SistemaDoGerenciadorFinanceiro {
             }
         }
         return codigoEncontrado;
+    }
+
+    public void gravarDados() throws IOException {
+        gravador.gravaDados(this.usuarios.values());
+    }
+
+    public void recuperarDados() throws IOException{
+        List<Usuario> usuariosRecuperados = new ArrayList<>(gravador.recuperaDados());
+        for(Usuario u: usuariosRecuperados){
+            Usuario usuario = new Usuario(u.getNome(), u.getSaldoCorrente(), u.getCodigo());
+            this.usuarios.put(usuario.getCodigo(), usuario);
+        }
     }
 }

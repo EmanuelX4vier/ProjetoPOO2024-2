@@ -1,5 +1,6 @@
 package GerenciaFinanceira.Interface_E_Sistema;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Objects;
 import GerenciaFinanceira.Movimentacao.Entrada;
@@ -7,7 +8,7 @@ import GerenciaFinanceira.Movimentacao.Saida;
 
 import java.util.List;
 
-public class Usuario {
+public class Usuario implements Serializable {
 
     private String nome;
     private double saldoCorrente;

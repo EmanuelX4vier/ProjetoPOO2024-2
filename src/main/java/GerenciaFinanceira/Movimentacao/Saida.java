@@ -2,9 +2,10 @@ package GerenciaFinanceira.Movimentacao;
 
 import GerenciaFinanceira.Interface_E_Sistema.Data;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class Saida extends MovimentoBase {
+public class Saida extends MovimentoBase implements Serializable {
 
     private TipoDeMovimentacao tipo;
     private double valor;
@@ -42,7 +43,7 @@ public class Saida extends MovimentoBase {
 
     @Override
     public String getMovimentoCompleto() {
-        return "Entrada de: "+getTipo()+"; No valor de: "+getValor()+"; Descrita como: "+getDescricao()+"; Na data: "+getData()+";De código: "+getCodigoDeMovimentacao()+" .";
+        return "Saida de: "+getTipo()+"; No valor de: "+getValor()+"; Descrita como: "+getDescricao()+"; Na data: "+getData()+"; De código: "+getCodigoDeMovimentacao()+" .";
     }
 
     public Data getData() {

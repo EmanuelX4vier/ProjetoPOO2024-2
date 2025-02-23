@@ -1,8 +1,9 @@
 package GerenciaFinanceira.Interface_E_Sistema;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class Data {
+public class Data implements Serializable {
 
     private int dia;
     private int mes;
@@ -56,7 +57,7 @@ public class Data {
 
     @Override
     public String toString() {
-        return "Data: " + dia + " / " + mes + " / " + ano + " .";
+        return "Data: " + dia + " / " + mes + " / " + ano ;
     }
 }
 
