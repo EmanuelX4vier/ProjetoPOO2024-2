@@ -79,6 +79,14 @@ public class SistemaDoGerenciadorFinanceiro implements Serializable {
         return usuarioPrincipal.getSaidas();
     }
 
+    public double getValorDeTodasAsEntradas(){
+        double valores = 0;
+        for(Entrada e: usuarioPrincipal.getEntradas()){
+            valores += e.getValor();
+        }
+        return valores;
+    }
+
 
     //Gravação e recuperação
     public void salvarDados() throws IOException {

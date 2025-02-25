@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1180f24-a16a-4b0c-9a76-6008a89408f9" name="Changes" comment="exclusão da interface, e gravador de dados, adição de um novo sistema de usuarios, melhorias nos métodos, testes positivos.">
+    <list default="true" id="b1180f24-a16a-4b0c-9a76-6008a89408f9" name="Changes" comment="atualização, ainda a detalhar">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dadosFinanceiros.dat" beforeDir="false" afterPath="$PROJECT_DIR$/dadosFinanceiros.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/GerenciaFinanceira/Interface_E_Sistema/SistemaDoGerenciadorFinanceiro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GerenciaFinanceira/Interface_E_Sistema/SistemaDoGerenciadorFinanceiro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GerenciaFinanceira/ProgramaGerenciadorFinanceiro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GerenciaFinanceira/ProgramaGerenciadorFinanceiro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestesCom_O_Sistema/SistemaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestesCom_O_Sistema/SistemaTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +76,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ProgramaGerenciadorFinanceiro">
+  <component name="RunManager" selected="JUnit.SistemaTest.testeDeSistema">
     <configuration name="ProgramaGerenciadorFinanceiro" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="GerenciaFinanceira.ProgramaGerenciadorFinanceiro" />
       <module name="ProjetoPOO2024-2" />
@@ -119,6 +121,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SistemaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProjetoPOO2024-2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TestesCom_O_Sistema.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TestesCom_O_Sistema" />
+      <option name="MAIN_CLASS_NAME" value="TestesCom_O_Sistema.SistemaTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SistemaTest.testeDeSistema" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProjetoPOO2024-2" />
       <extension name="coverage">
@@ -135,28 +152,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UsuarioTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ProjetoPOO2024-2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="TestesComUsuario.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="TestesComUsuario" />
-      <option name="MAIN_CLASS_NAME" value="TestesComUsuario.UsuarioTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ProgramaGerenciadorFinanceiro" />
         <item itemvalue="JUnit.SistemaTest.testeDeSistema" />
+        <item itemvalue="JUnit.SistemaTest" />
+        <item itemvalue="Application.ProgramaGerenciadorFinanceiro" />
         <item itemvalue="JUnit.Entradas_Saidas_Test" />
         <item itemvalue="JUnit.Entradas_Saidas_Test.testaEntrada_E_Saida" />
-        <item itemvalue="JUnit.UsuarioTest" />
       </list>
     </recent_temporary>
   </component>
@@ -185,7 +187,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740248538455</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="atualização, ainda a detalhar">
+      <option name="closed" value="true" />
+      <created>1740491357744</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1740491357744</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -202,6 +212,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="esqueleto com varios erros, dificuldade com a gravacao de dados." />
     <MESSAGE value="exclusão da interface, e gravador de dados, adição de um novo sistema de usuarios, melhorias nos métodos, testes positivos." />
-    <option name="LAST_COMMIT_MESSAGE" value="exclusão da interface, e gravador de dados, adição de um novo sistema de usuarios, melhorias nos métodos, testes positivos." />
+    <MESSAGE value="atualização, ainda a detalhar" />
+    <option name="LAST_COMMIT_MESSAGE" value="atualização, ainda a detalhar" />
   </component>
 </project>

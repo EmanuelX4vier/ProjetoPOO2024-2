@@ -20,36 +20,33 @@ public class SistemaTest {
         //sistema.recuperarDados();
         sistema.cadastraUsuario("Emanuel", 300);
         //TestaCadastro.
-        assertEquals("Emanuel", sistema.getUsuario("Emanuel").getNome());
-        assertEquals(300, sistema.getUsuario("Emanuel").getSaldoCorrente());
+        assertEquals("Emanuel", sistema.getNomeDoUsuario());
+        assertEquals(300, sistema.saldo());
         //Nome e saldo OK
-        int codigoDoUsuario = sistema.getCodigoDoUsuario("Emanuel");
+        int codigoDoUsuario = sistema.getCodigoDoUsuario();
         System.out.println(codigoDoUsuario);
-        assertEquals(codigoDoUsuario, sistema.getCodigoDoUsuario("Emanuel"));
+        assertEquals(codigoDoUsuario, sistema.getCodigoDoUsuario());
         System.out.println();
         //Código OK.
         sistema.registrarEntrada(codigoDoUsuario, TipoDeMovimentacao.RecebimentoQualquer, 200, "Agiotagem", new Data());
-        assertEquals(1, sistema.getUsuario("Emanuel").getEntradas().size());
-        assertEquals(0, sistema.getUsuario("Emanuel").getSaidas().size());
+        assertEquals(1, sistema.getEntradasDoUsuario().size());
+        assertEquals(0, sistema.getSaidasDoUsuario().size());
         //Listas de entrada e saida OK.
 
 
 
-
-
-        /*
         //Testa funções.
-        System.out.println(sistema.getCodigoDoUsuario("Emanuel"));
+        System.out.println(sistema.getCodigoDoUsuario());
         try{
-            sistema.registrarSaida(codigoDoUsuario, TipoDeMovimentacao.RecebimentoQualquer, 200, "Agiotagem",new Data());
-            System.out.println(sistema.getUsuario("Emanuel").getSaidas());
+            sistema.registrarSaida(codigoDoUsuario, TipoDeMovimentacao.RecebimentoQualquer, 400, "Agiotagem outra",new Data());
+            System.out.println(sistema.getSaidasDoUsuario());
         }catch (UsuarioNaoCadastradoException e){
             e.getMessage();
         }
-        //System.out.println(sistema.getUsuario("Emanuel").getSaidas());
-        assertEquals(0, sistema.getUsuario("Emanuel").getSaidas().size());
-        //System.out.println(sistema.getUsuario("Emanuel").getValorDeTodasAsEntradas());
-        //sistema.gravarDados();
-        */
+        System.out.println(sistema.getSaidasDoUsuario());
+        assertEquals(1, sistema.getSaidasDoUsuario().size());
+        System.out.println(sistema.getValorDeTodasAsEntradas());
+        sistema.salvarDados();
+
     }
 }
