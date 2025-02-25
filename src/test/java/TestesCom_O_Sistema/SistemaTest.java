@@ -26,7 +26,6 @@ public class SistemaTest {
         int codigoDoUsuario = sistema.getCodigoDoUsuario();
         System.out.println(codigoDoUsuario);
         assertEquals(codigoDoUsuario, sistema.getCodigoDoUsuario());
-        System.out.println();
         //Código OK.
         sistema.registrarEntrada(codigoDoUsuario, TipoDeMovimentacao.RecebimentoQualquer, 200, "Agiotagem", new Data());
         assertEquals(1, sistema.getEntradasDoUsuario().size());
@@ -43,7 +42,6 @@ public class SistemaTest {
         }catch (UsuarioNaoCadastradoException e){
             e.getMessage();
         }
-        System.out.println(sistema.getSaidasDoUsuario());
         assertEquals(1, sistema.getSaidasDoUsuario().size());
         System.out.println(sistema.getValorDeTodasAsEntradas());
         sistema.salvarDados();
