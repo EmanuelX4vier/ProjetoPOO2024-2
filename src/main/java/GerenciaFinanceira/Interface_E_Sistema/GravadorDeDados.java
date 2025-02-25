@@ -1,5 +1,7 @@
 package GerenciaFinanceira.Interface_E_Sistema;
 
+import GerenciaFinanceira.Interface_E_Sistema.Usuario;
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -12,11 +14,12 @@ public class GravadorDeDados implements Serializable {
         this.dadosFinanceiros = "dadosFinanceiros.dat";
     }
 
-   public void gravaDados (Collection<Usuario> usuarios) throws IOException{
-       ArrayList<Usuario> usuariosArrayList = new ArrayList<>(usuarios);
-       try(ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(this.dadosFinanceiros))){
-           out.writeObject(usuariosArrayList);
-       }
+    public void gravaDados (Usuario usuarios) throws IOException{
+        ArrayList<Usuario> usuariosArrayList = new ArrayList<>();
+        usuariosArrayList.add(usuarios);
+        try(ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(this.dadosFinanceiros))){
+            out.writeObject(usuariosArrayList);
+        }
     }
 
     public Collection<Usuario> recuperaDados() throws IOException{

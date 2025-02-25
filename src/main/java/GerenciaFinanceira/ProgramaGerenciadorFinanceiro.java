@@ -30,20 +30,18 @@ public class ProgramaGerenciadorFinanceiro {
                 try {
                     sistema.cadastraUsuario(nome, saldoCorrente);
                     JOptionPane.showMessageDialog(null, "Cadastro feito com sucesso. Aqui está seu código para que possa fazer aplicações no programa:");
-                    JOptionPane.showMessageDialog(null, sistema.getCodigoDoUsuario(nome));
+                    JOptionPane.showMessageDialog(null, sistema.getNomeDoUsuario());
                 } catch (UsuarioJaCadastradoException e) {
                     e.getMessage();
-                } catch (UsuarioNaoCadastradoException e) {
-                    throw new RuntimeException(e);
                 }
             }
         }else{
             JOptionPane.showMessageDialog(null, "Bem vindo de volta");
-            JOptionPane.showMessageDialog(null, sistema.getUsuario("Emanuel").getNome());
-            JOptionPane.showMessageDialog(null, sistema.getUsuario("Emanuel").getCodigo());
-            int codigo = sistema.getCodigoDoUsuario("Emanuel");
+            JOptionPane.showMessageDialog(null, sistema.getNomeDoUsuario());
+            JOptionPane.showMessageDialog(null, sistema.getCodigoDoUsuario());
+            int codigo = sistema.getCodigoDoUsuario();
             JOptionPane.showMessageDialog(null, codigo);
-            JOptionPane.showMessageDialog(null, sistema.getUsuario("Emanuel").getSaldoCorrente());
+            JOptionPane.showMessageDialog(null, sistema.saldo());
             try{
                 sistema.registrarEntrada(codigo, TipoDeMovimentacao.RecebimentoQualquer, 200, "Agiotagem", new Data(1,12,2004));
                 JOptionPane.showMessageDialog(null, "registrado com sucesso.");
@@ -51,7 +49,7 @@ public class ProgramaGerenciadorFinanceiro {
                 throw new RuntimeException(e);
             }
 
-            JOptionPane.showMessageDialog(null, sistema.getUsuario("Emanuel").getEntradas());
+            JOptionPane.showMessageDialog(null, sistema.getEntradasDoUsuario());
         }
     }
 }

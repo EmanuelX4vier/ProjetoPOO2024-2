@@ -13,12 +13,12 @@ import java.util.*;
 
 public class SistemaDoGerenciadorFinanceiro implements Serializable {
 
-    private Map<Integer, Usuario> usuarios;
+    private Usuario usuarioPrincipal;
     private GravadorDeDados gravador;
 
     //inicia o sistema
     public SistemaDoGerenciadorFinanceiro(){
-        this.usuarios = new HashMap<>();
+        this.usuarioPrincipal = new Usuario();
         this.gravador = new GravadorDeDados();
     }
 
@@ -26,78 +26,72 @@ public class SistemaDoGerenciadorFinanceiro implements Serializable {
     Random random = new Random();
 
     //Cria usuário.
-    public void cadastraUsuario (String nome, double saldoCorrente) throws UsuarioJaCadastradoException{
+    public void cadastraUsuario (String nome, double saldoCorrente) throws UsuarioJaCadastradoException {
         int codigoDoUsuario = random.nextInt();
         Usuario usuario = new Usuario(nome, saldoCorrente, codigoDoUsuario);
-        this.usuarios.put(codigoDoUsuario, usuario);
+        this.usuarioPrincipal = usuario;
     }
 
     //Registra saidas e entradas de valores.
     public void registrarEntrada (int codigoDoUsuario, TipoDeMovimentacao tipo, double valor, String descricao, Data data) throws UsuarioNaoCadastradoException {
-        if(this.usuarios.containsKey(codigoDoUsuario)){
+        if(usuarioPrincipal.getCodigo() == codigoDoUsuario){
             Entrada novaEntrada = new Entrada(tipo, valor, descricao, data, random.nextInt());
-            List<Entrada> entradas = new ArrayList<>( this.usuarios.get(codigoDoUsuario).getEntradas());
-            entradas.add(novaEntrada);
+            List<Entrada> novaLista = new ArrayList<>(usuarioPrincipal.getEntradas());
+            novaLista.add(novaEntrada);
+            usuarioPrincipal.setEntradas(novaLista);
         }else{
-            throw new UsuarioNaoCadastradoException ("Código de usuário incorreto ou não existe");
+            throw new UsuarioNaoCadastradoException("Codigo errado ou usuário não cadastrado");
         }
     }
 
-     public void registrarSaida(int codigoDoUsuario, TipoDeMovimentacao tipo, double valor, String descricao, Data data) throws UsuarioNaoCadastradoException{
-        if(this.usuarios.containsValue(codigoDoUsuario)){
+    public void registrarSaida(int codigoDoUsuario, TipoDeMovimentacao tipo, double valor, String descricao, Data data) throws UsuarioNaoCadastradoException{
+        if(usuarioPrincipal.getCodigo() == codigoDoUsuario){
             Saida novaSaida = new Saida(tipo, valor, descricao, data, random.nextInt());
-            for(Usuario u: this.usuarios.values()){
-                u.getSaidas().add(novaSaida);
-            }
+            List<Saida> novaLista = new ArrayList<>(usuarioPrincipal.getSaidas());
+            novaLista.add(novaSaida);
+            usuarioPrincipal.setSaidas(novaLista);
+        }else{
+            throw new UsuarioNaoCadastradoException("Codigo errado ou usuário não cadastrado");
         }
-     }
+    }
 
-     //Operações com o saldo.
-     public double saldo (){
-        double saldo = 0;
-        for(Usuario u:this.usuarios.values()){
-           double saldoCorrente = u.getSaldoCorrente();
-           double valorDasEntradas = u.getValorDeTodasAsEntradas();
-           double valorDasSaidas = u.getValorDeTodasAsSaidas();
-           saldo = saldoCorrente + valorDasEntradas - valorDasSaidas;
-        }
+    //Operações com o saldo.
+    public double saldo (){
+        double saldo = usuarioPrincipal.getSaldoCorrente()+usuarioPrincipal.getValorDeTodasAsEntradas()-usuarioPrincipal.getValorDeTodasAsSaidas();
+        usuarioPrincipal.setSaldoCorrente(saldo);
         return saldo;
-     }
-
-    public Usuario getUsuario (String nome) throws UsuarioNaoCadastradoException{
-        Usuario usuario = new Usuario();
-        for(Usuario u:this.usuarios.values()){
-            if(u.getNome().equalsIgnoreCase(nome)) {
-                Usuario usuarioEncontrado = new Usuario(u.getNome(), u.getSaldoCorrente(), u.getCodigo());
-                usuario = usuarioEncontrado;
-            }else{
-                throw new UsuarioNaoCadastradoException("Usuário não encontrado.");
-            }
-        }
-        return usuario;
     }
 
-    public int getCodigoDoUsuario(String nome) throws UsuarioNaoCadastradoException {
-        int codigoEncontrado = 0;
-        for(Usuario u:this.usuarios.values()){
-            if(u.getNome().equalsIgnoreCase(nome)){
-                codigoEncontrado=u.getCodigo();
-            }else{
-                throw new UsuarioNaoCadastradoException("Usuario não encontrado");
-            }
-        }
-        return codigoEncontrado;
+    //get's e set's.
+    public String getNomeDoUsuario(){
+        return usuarioPrincipal.getNome();
     }
 
-    public void gravarDados() throws IOException {
-        gravador.gravaDados(this.usuarios.values());
+    public int getCodigoDoUsuario() throws UsuarioNaoCadastradoException {;
+        return usuarioPrincipal.getCodigo();
     }
 
-    public void recuperarDados() throws IOException{
+    public List<Entrada> getEntradasDoUsuario(){
+        return usuarioPrincipal.getEntradas();
+    }
+
+    public List<Saida> getSaidasDoUsuario(){
+        return usuarioPrincipal.getSaidas();
+    }
+
+
+    //Gravação e recuperação
+    public void salvarDados() throws IOException {
+        gravador.gravaDados(this.usuarioPrincipal);
+    }
+
+    public void recuperarDados() throws IOException {
         List<Usuario> usuariosRecuperados = new ArrayList<>(gravador.recuperaDados());
         for(Usuario u: usuariosRecuperados){
             Usuario usuario = new Usuario(u.getNome(), u.getSaldoCorrente(), u.getCodigo());
-            this.usuarios.put(usuario.getCodigo(), usuario);
+            this.usuarioPrincipal = usuario;
+            this.usuarioPrincipal.setEntradas(u.getEntradas());
+            this.usuarioPrincipal.setSaidas(u.getSaidas());
         }
     }
 }
